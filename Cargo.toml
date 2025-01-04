@@ -1,0 +1,23 @@
+[package]
+name = "aoc-rs"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "aoc_rs"
+path = "src/lib.rs"
+
+[[bin]]
+name = "aoc_rs"
+path = "src/cli.rs"
+
+[[bench]]
+name = "benchmarks"
+harness = false
+
+[dependencies]
+clap = { version = "4.5.23", features = ["derive"] }
+seq-macro = "0.3.5"
+
+[dev-dependencies]
+criterion = "0.5.1"
